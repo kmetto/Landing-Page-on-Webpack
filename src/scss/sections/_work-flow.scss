@@ -1,0 +1,33 @@
+.work-flow-section {
+  background-color: $brand-secondary-color;
+  padding: 62px 0 75px;
+  .title {
+    color: $brand-primary-color;
+    margin-bottom: 24px;
+  }
+  .description {
+    color: $white-color;
+  }
+  .work-flow-name {
+    color: $white-color;
+    font-size: 20px;
+  }
+}
+
+.work-flow-list {
+  margin-top: 62px;
+  &:after {
+    @extend %clearFlow;
+  }
+  .work-flow-list-item {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .work-flow-icon-holder {
+    margin-bottom: 30px;
+    color: $brand-primary-color;
+    i {
+      font-size: 45px;
+    }
+  }
+}

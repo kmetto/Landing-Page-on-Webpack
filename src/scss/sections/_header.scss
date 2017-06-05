@@ -1,0 +1,79 @@
+.main-head {
+  position: relative;
+  font-family: $oswald-bold;
+  text-transform: uppercase;
+  background-image: url("#{$path-images}banner.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 85px 0 290px;
+  .navigation-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(19, 19, 22, 0.5);
+    .nav-holder {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 25px 0 40px;
+    }
+  }
+}
+
+.logo-holder {
+  position: relative;
+  padding-left: 42px;
+  .logo {
+    position: absolute;
+    top: -25px;
+    left: 0;
+  }
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 14px;
+   li {
+     @include dotNavigation;
+     a {
+       color: $white-color;
+       text-decoration: none;
+       @extend %transition;
+       &:hover {
+         color: $brand-primary-color;
+       }
+     }
+     .active-link {
+       color: $brand-primary-color;
+     }
+   }
+}
+
+.main-head-information {
+  background-color: rgba(19, 19, 22, 0.5);
+  text-align: center;
+  padding: 64px;
+  margin: 290px auto 0;
+  .information-title-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    .information-title {
+      max-width: 688px;
+      font-size: 64.66px;
+      color: $white-color;
+      margin: 0;
+    }
+  }
+  .head-information-more-btn {
+    @include buttonGeneral(20px, 62px, $dark-grey-color, $brand-primary-color, $brand-primary-color, $white-color)
+  }
+}
