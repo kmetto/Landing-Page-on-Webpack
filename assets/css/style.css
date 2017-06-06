@@ -1,12 +1,12 @@
 /* BASE
 ================================================= */
-.general-btn, .menu-list li a, .services-icon-holder, .portfolio-tabs li a, .portfolio-information .view-live-btn, .portfolio-media-item, .portfolio-feedback .feedback-btn, .footer-section .reserved a, .footer-section .social-list .social-item a {
+.general-btn, .menu-list li a, .services-icon-holder, .portfolio-tabs li a, .portfolio-information .view-live-btn, .portfolio-media-item, .portfolio-feedback .feedback-btn, .social-member-list li a, .clients-carousel-control li, .footer-section .reserved a, .footer-section .social-list .social-item a {
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in; }
 
 .work-flow-list:after, .portfolio-information-holder:after,
 .portfolio-media:after,
-.achievement-list:after, .about-list:after, .contact-us-container .contact-list:after, .contact-user-form:after {
+.achievement-list:after, .about-list:after, .team-member-list:after, .contact-us-container .contact-list:after, .contact-user-form:after {
   display: block;
   clear: both;
   content: ''; }
@@ -514,10 +514,174 @@ body {
     text-align: left; }
 
 .team-section {
-  padding: 62px 0;
+  padding: 62px 0 0;
   background-color: #fbfbfb; }
   .team-section .title {
     margin-bottom: 24px; }
+
+.team-member-list {
+  margin: 62px auto; }
+  .team-member-list .team-member-container {
+    position: relative;
+    max-width: 270px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    text-align: center;
+    font-family: "oswald-regular";
+    text-transform: uppercase;
+    box-shadow: 0 3px 0 0 #dfe4e5;
+    cursor: pointer; }
+    .team-member-list .team-member-container .angle-up {
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 50%;
+      bottom: -62px;
+      -webkit-transform: translate(-50%, 0%);
+          -ms-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
+      border-bottom: 25px solid #131316;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent; }
+    .team-member-list .team-member-container .team-member-img-holder {
+      width: 100%;
+      height: 250px; }
+      .team-member-list .team-member-container .team-member-img-holder img {
+        max-width: 100%;
+        max-height: 100%; }
+    .team-member-list .team-member-container span {
+      display: block; }
+    .team-member-list .team-member-container .team-member-name {
+      margin: 15px 0;
+      font-size: 20px;
+      color: #ffe600; }
+    .team-member-list .team-member-container .team-member-post {
+      font-size: 16px;
+      color: #707070; }
+
+.team-member-info-container {
+  padding: 65px 15px 45px;
+  background-color: #131316; }
+  .team-member-info-container .team-member-info {
+    position: relative;
+    max-width: 770px;
+    margin: 0 auto; }
+    .team-member-info-container .team-member-info .member {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #ffe600; }
+    .team-member-info-container .team-member-info .description {
+      text-align: left;
+      color: #fff;
+      margin: 25px 0; }
+    .team-member-info-container .team-member-info .close-icon-holder {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 20px;
+      cursor: pointer; }
+
+.social-member-list li {
+  display: inline-block; }
+  .social-member-list li:first-child {
+    margin-right: 25px; }
+  .social-member-list li a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 16px;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent; }
+    .social-member-list li a:hover {
+      background-color: #ffe600;
+      color: #131316;
+      border-color: #ffe600; }
+
+.skills-container {
+  padding: 62px 0;
+  background-color: #131a1d; }
+  .skills-container .title,
+  .skills-container .description {
+    color: #fff; }
+  .skills-container .description {
+    margin: 24px auto 55px; }
+
+.client-info-container {
+  padding: 62px 0;
+  background-color: #fff; }
+  .client-info-container .client-logo-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 83px; }
+    .client-info-container .client-logo-list .client-logo-item {
+      margin-right: 55px; }
+      .client-info-container .client-logo-list .client-logo-item:last-child {
+        margin-right: 0; }
+
+.client-feedback-container {
+  font-family: "oswald-regular";
+  text-align: center;
+  padding: 66px;
+  background-color: #131a1d; }
+  .client-feedback-container .carousel-client-feedback .item {
+    max-width: 515px;
+    margin: 0 auto; }
+
+.client-feedback {
+  font-size: 20px;
+  padding: 0;
+  margin: 0 0 25px;
+  border: none; }
+
+.client-name {
+  display: block;
+  margin: 25px 0;
+  font-size: 16px; }
+
+.clients-carousel-control {
+  position: static;
+  margin: 0 auto; }
+  .clients-carousel-control li {
+    border-radius: 0;
+    width: 5px;
+    height: 5px;
+    border-color: #fff;
+    background-color: #fff;
+    margin: 0 10px 0 0; }
+    .clients-carousel-control li:last-child {
+      margin-right: 0; }
+    .clients-carousel-control li.active {
+      border-radius: 0;
+      margin: 0 10px 0 0;
+      width: 5px;
+      height: 5px;
+      border-color: #ffe600;
+      background-color: #ffe600; }
+    .clients-carousel-control li.last-control {
+      margin: 0; }
 
 /* contact-us-container
 ======================================*/

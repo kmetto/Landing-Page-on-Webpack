@@ -1,7 +1,122 @@
 .team-section {
-  padding: 62px 0;
+  padding: 62px 0 0;
   background-color: #fbfbfb;
   .title {
     margin-bottom: 24px;
+  }
+}
+
+.team-member-list {
+  margin: 62px auto;
+  &:after {
+    @extend %clearFlow;
+  }
+  .team-member-container {
+    position: relative;
+    max-width: 270px;
+    padding-bottom: 15px;
+    background-color: $white-color;
+    text-align: center;
+    font-family: $oswald-regular;
+    text-transform: uppercase;
+    box-shadow: 0 3px 0 0 rgba(223,228,229,1);
+    cursor: pointer;
+    .angle-up {
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 50%;
+      bottom: -62px;
+      transform: translate(-50%, -0%);
+      border-bottom: 25px solid $dark-grey-color;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+    }
+    .team-member-img-holder {
+      width: 100%;
+      height: 250px;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    span {
+      display: block;
+    }
+    .team-member-name {
+      margin: 15px 0;
+      font-size: 20px;
+      color: $brand-primary-color;
+    }
+    .team-member-post {
+      font-size: 16px;
+      color: $brand-secondary-text-color;
+    }
+  }
+}
+
+.team-member-info-container {
+  padding: 65px 15px 45px;
+  background-color: $dark-grey-color;
+  .team-member-info {
+    position: relative;
+    max-width: 770px;
+    margin: 0 auto;
+    .member {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: $brand-primary-color;
+    }
+    .description {
+      text-align: left;
+      color: $white-color;
+      margin: 25px 0;
+    }
+    .close-icon-holder {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.social-member-list {
+  li {
+    display: inline-block;
+    &:first-child {
+      margin-right: 25px;
+    }
+    a {
+      @extend %transition;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      text-decoration: none;
+      width: 35px;
+      height: 35px;
+      border: 1px solid $white-color;
+      color: $white-color;
+      background-color: transparent;
+      &:hover {
+        background-color: $brand-primary-color;
+        color: $dark-grey-color;
+        border-color: $brand-primary-color;
+      }
+    }
+  }
+}
+
+.skills-container {
+  padding: 62px 0;
+  background-color: $brand-secondary-color;
+  .title,
+  .description {
+    color: $white-color;
+  }
+  .description {
+    margin: 24px auto 55px;
   }
 }

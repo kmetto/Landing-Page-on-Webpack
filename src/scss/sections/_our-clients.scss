@@ -1,0 +1,70 @@
+.client-info-container {
+  padding: 62px 0;
+  background-color: $white-color;
+  .client-logo-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 83px;
+    .client-logo-item {
+      margin-right: 55px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.client-feedback-container {
+  font-family: $oswald-regular;
+  text-align: center;
+  padding: 66px;
+  background-color: $brand-secondary-color;
+  .carousel-client-feedback {
+    .item {
+      max-width: 515px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.client-feedback {
+  font-size: 20px;
+  padding: 0;
+  margin: 0 0 25px;
+  border: none;
+}
+
+.client-name {
+  display: block;
+  margin: 25px 0;
+  font-size: 16px;
+}
+
+.clients-carousel-control {
+  position: static;
+  margin: 0 auto;
+  li {
+    @extend %transition;
+    border-radius: 0;
+    width: 5px;
+    height: 5px;
+    border-color: $white-color;
+    background-color: $white-color;
+    margin: 0 10px 0 0;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      border-radius: 0;
+      margin: 0 10px 0 0;
+      width: 5px;
+      height: 5px;
+      border-color: $brand-primary-color;
+      background-color: $brand-primary-color;
+    }
+    &.last-control {
+      margin: 0;
+    }
+  }
+}
