@@ -20,7 +20,9 @@ input::-ms-reveal { // clear input appearance
   display: none;
 }
 
-input, textarea, button { //prevent outline
+input,
+textarea,
+button { //prevent outline
   border: none;
   &:focus {
     outline: none;
