@@ -5,7 +5,8 @@
   transition: all .3s ease-in; }
 
 .work-flow-list:after, .portfolio-information-holder:after,
-.portfolio-media:after {
+.portfolio-media:after,
+.achievement-list:after, .about-list:after {
   display: block;
   clear: both;
   content: ''; }
@@ -429,6 +430,90 @@ body {
     .portfolio-feedback .feedback-btn:hover {
       color: #ffe600;
       background: #131316; }
+
+.portfolio-achievements {
+  background-color: #131a1d;
+  padding: 62px 0; }
+  .portfolio-achievements .title,
+  .portfolio-achievements .description {
+    color: #fff; }
+  .portfolio-achievements .description {
+    margin-top: 25px;
+    margin-bottom: 60px; }
+  .portfolio-achievements .achievement-holder {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "oswald-bold";
+    border: 1px solid #ffe600;
+    padding: 35px 0; }
+    .portfolio-achievements .achievement-holder .achievements-item-number {
+      font-size: 40px;
+      color: #fff; }
+    .portfolio-achievements .achievement-holder .achievement-item-caption {
+      font-size: 16px;
+      color: #ffe600; }
+
+.about-section {
+  padding: 62px 0;
+  background-color: #fff; }
+
+.about-list {
+  margin-top: 97px; }
+  .about-list .about-item {
+    margin-top: 60px; }
+    .about-list .about-item:nth-child(1), .about-list .about-item:nth-child(2) {
+      margin-top: 0; }
+
+.about-item-container {
+  position: relative;
+  padding-left: 100px; }
+  .about-item-container .about-icon-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ffe600;
+    border-radius: 50%;
+    background-color: #ffe600;
+    color: #fff;
+    font-size: 35px; }
+  .about-item-container .caption,
+  .about-item-container .description {
+    text-align: left; }
+
+.team-section {
+  padding: 62px 0;
+  background-color: #fbfbfb; }
+  .team-section .title {
+    margin-bottom: 24px; }
 
 /* COMPONENTS
 ===================================================*/

@@ -31,7 +31,8 @@
 }
 
 .portfolio-information-holder,
-.portfolio-media {
+.portfolio-media,
+.achievement-list {
   &:after {
     @extend %clearFlow;
   }
@@ -138,5 +139,35 @@
     text-transform: uppercase;
     font-size: 15px;
     font-family: $oswald-bold;
+  }
+}
+
+.portfolio-achievements {
+  background-color: $brand-secondary-color;
+  padding: 62px 0;
+  .title,
+  .description {
+    color: $white-color;
+  }
+  .description {
+    margin-top: 25px;
+    margin-bottom: 60px;
+  }
+  .achievement-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $oswald-bold;
+    border: 1px solid $brand-primary-color;
+    padding: 35px 0;
+    .achievements-item-number {
+      font-size: 40px;
+      color: $white-color;
+    }
+    .achievement-item-caption {
+      font-size: 16px;
+      color: $brand-primary-color;
+    }
   }
 }

@@ -1,0 +1,42 @@
+.about-section {
+  padding: 62px 0;
+  background-color: $white-color;
+}
+
+.about-list {
+  margin-top: 97px;
+  &:after {
+    @extend %clearFlow;
+  }
+  .about-item {
+    margin-top: 60px;
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+}
+
+.about-item-container {
+  position: relative;
+  padding-left: 100px;
+  .about-icon-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border: 1px solid $brand-primary-color;
+    border-radius: 50%;
+    background-color: $brand-primary-color;
+    color: $white-color;
+    font-size: 35px;
+  }
+  .caption,
+  .description {
+    text-align: left;
+  }
+}
