@@ -24,12 +24,10 @@
 @media screen and (max-width: 1199px) {
   //work-flow-section
   .work-flow-list {
+    margin-bottom: -30px;
     .work-flow-list-item {
       margin-bottom: 30px;
       padding: 0;
-      &:last-child {
-       margin-bottom: 0;
-      }
     }
     .work-flow-icon-holder {
       i {
@@ -38,34 +36,7 @@
     }
   }
   //end work-flow-section
-  //services-section
-  .services-list {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .services-list-item {
-      margin-bottom: 30px;
-      width: 100%;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-  .services-icon-holder {
-    width: 150px;
-    height: 150px;
-    font-size: 65px;
-    margin-bottom: 30px;
-  }
-  // end services-section
   //portfolio-section
-  .achievement-item {
-    margin-bottom: 30px;
-    padding: 0;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
   .portfolio-media-item {
     .portfolio-item-mask {
       .media-title {
@@ -91,21 +62,19 @@
     }
   }
   .about-list {
+    margin-bottom: -30px;
     .about-item {
       margin: 0 auto 30px;
-      padding: 0;
-      &:last-child {
-        margin-bottom: 0;
-      }
     }
   }
   //end about-section
   //team-section
   .team-member-list {
+    margin-bottom: -30px;
     .team-member-container {
       margin: 0 auto;
-      &:last-child {
-        margin-bottom: 0;
+      .angle-up {
+        display: none;
       }
     }
   }
@@ -129,6 +98,16 @@
     font-size: 65px;
   }
   //end contact-section
+}
+
+@media screen and (max-width: 1085px) {
+  .services-list {
+    .services-list-item {
+      &:nth-child(4) {
+        margin-top: 30px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -172,17 +151,20 @@
   .caption {
     margin-bottom: 15px;
   }
-  //end general
-  //team-section
-  .team-member-list {
-    .team-member-container {
-      .angle-up {
-        display: none;
-      }
-    }
+  .services-list .description,
+  .work-flow-list .description,
+  .about-list .description {
+    max-width: 300px;
   }
-  //end team-section
+
+  //end general
   //portfolio-section
+  .achievement-list {
+    margin-bottom: -30px;
+  }
+  .achievement-item {
+    margin-bottom: 30px;
+  }
   .portfolio-media-item {
     .portfolio-item-mask {
       .media-title {
@@ -219,6 +201,36 @@
     }
   }
   //end contact-us
+  //about-section
+  .about-list {
+    .about-item {
+      padding: 0;
+    }
+  }
+  //end about-section
+  //services-section
+  .services-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .services-list-item {
+      margin-bottom: 30px;
+      width: 100%;
+      &:nth-child(4) {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .services-icon-holder {
+    width: 150px;
+    height: 150px;
+    font-size: 65px;
+    margin-bottom: 30px;
+  }
+  // end services-section
 }
 
 @media screen and (max-width: 920px) {
@@ -228,21 +240,16 @@
   }
   .client-info-container {
     .client-logo-list {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      margin-bottom: -30px;
     }
   }
   .client-logo-item {
-    margin: 0 auto 30px;
-    &:last-child {
-      margin-bottom: 0;
-    }
+    margin: 0 30px  30px;
   }
 //end client-section
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   //mobile menu
   .main-head {
     padding: 65px 0 30px;
@@ -287,6 +294,11 @@
     }
   }
   //end mobile-menu
+  //portfolio-section
+  .achievement-item {
+    padding: 0;
+  }
+  //portfolio-section
 }
 
 @media screen and (max-width: 560px) {
@@ -344,4 +356,16 @@
     height: 190px;
   }
   //end portfolio-section
+  //client-section
+  .client-info-container {
+    .client-logo-list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .client-logo-item {
+    margin: 0 0 30px;
+  }
+  //end client-section
 }

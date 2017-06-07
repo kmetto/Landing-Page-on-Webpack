@@ -945,42 +945,13 @@ body {
       font-size: 32px; } }
 
 @media screen and (max-width: 1199px) {
-  .work-flow-list .work-flow-list-item {
-    margin-bottom: 30px;
-    padding: 0; }
-    .work-flow-list .work-flow-list-item:last-child {
-      margin-bottom: 0; }
-  .work-flow-list .work-flow-icon-holder i {
-    font-size: 65px; }
-  .services-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .services-list .services-list-item {
+  .work-flow-list {
+    margin-bottom: -30px; }
+    .work-flow-list .work-flow-list-item {
       margin-bottom: 30px;
-      width: 100%; }
-      .services-list .services-list-item:last-child {
-        margin-bottom: 0; }
-  .services-icon-holder {
-    width: 150px;
-    height: 150px;
-    font-size: 65px;
-    margin-bottom: 30px; }
-  .achievement-item {
-    margin-bottom: 30px;
-    padding: 0; }
-    .achievement-item:last-child {
-      margin-bottom: 0; }
+      padding: 0; }
+    .work-flow-list .work-flow-icon-holder i {
+      font-size: 65px; }
   .portfolio-media-item .portfolio-item-mask .media-title {
     font-size: 18px; }
   .about-item-container {
@@ -995,15 +966,16 @@ body {
       width: 150px;
       height: 150px;
       font-size: 65px; }
-  .about-list .about-item {
-    margin: 0 auto 30px;
-    padding: 0; }
-    .about-list .about-item:last-child {
-      margin-bottom: 0; }
-  .team-member-list .team-member-container {
-    margin: 0 auto; }
-    .team-member-list .team-member-container:last-child {
-      margin-bottom: 0; }
+  .about-list {
+    margin-bottom: -30px; }
+    .about-list .about-item {
+      margin: 0 auto 30px; }
+  .team-member-list {
+    margin-bottom: -30px; }
+    .team-member-list .team-member-container {
+      margin: 0 auto; }
+      .team-member-list .team-member-container .angle-up {
+        display: none; }
   .team-member {
     margin: 0 auto 30px;
     padding: 0; }
@@ -1016,6 +988,10 @@ body {
       margin-bottom: 0; }
   .contact-icon-holder {
     font-size: 65px; } }
+
+@media screen and (max-width: 1085px) {
+  .services-list .services-list-item:nth-child(4) {
+    margin-top: 30px; } }
 
 @media screen and (max-width: 991px) {
   .services-section,
@@ -1048,8 +1024,14 @@ body {
     margin: 15px auto; }
   .caption {
     margin-bottom: 15px; }
-  .team-member-list .team-member-container .angle-up {
-    display: none; }
+  .services-list .description,
+  .work-flow-list .description,
+  .about-list .description {
+    max-width: 300px; }
+  .achievement-list {
+    margin-bottom: -30px; }
+  .achievement-item {
+    margin-bottom: 30px; }
   .portfolio-media-item .portfolio-item-mask .media-title {
     font-size: 24px; }
   .portfolio-item {
@@ -1070,12 +1052,10 @@ body {
   .form-field-control {
     margin-bottom: 30px; }
     .form-field-control:last-child {
-      margin-top: 0; } }
-
-@media screen and (max-width: 920px) {
-  .client-info-container {
-    padding: 30px 0; }
-  .client-info-container .client-logo-list {
+      margin-top: 0; }
+  .about-list .about-item {
+    padding: 0; }
+  .services-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1089,12 +1069,28 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-  .client-logo-item {
-    margin: 0 auto 30px; }
-    .client-logo-item:last-child {
-      margin-bottom: 0; } }
+    .services-list .services-list-item {
+      margin-bottom: 30px;
+      width: 100%; }
+      .services-list .services-list-item:nth-child(4) {
+        margin-top: 0; }
+      .services-list .services-list-item:last-child {
+        margin-bottom: 0; }
+  .services-icon-holder {
+    width: 150px;
+    height: 150px;
+    font-size: 65px;
+    margin-bottom: 30px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
+  .client-info-container {
+    padding: 30px 0; }
+  .client-info-container .client-logo-list {
+    margin-bottom: -30px; }
+  .client-logo-item {
+    margin: 0 30px  30px; } }
+
+@media screen and (max-width: 767px) {
   .main-head {
     padding: 65px 0 30px; }
   .mob-menu {
@@ -1136,7 +1132,9 @@ body {
             text-align: center;
             padding: 10px 0;
             margin: 0;
-            display: block; } }
+            display: block; }
+  .achievement-item {
+    padding: 0; } }
 
 @media screen and (max-width: 560px) {
   .main-head-information {
@@ -1182,4 +1180,20 @@ body {
       .portfolio-tabs li:after {
         display: none; }
   .portfolio-item {
-    height: 190px; } }
+    height: 190px; }
+  .client-info-container .client-logo-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .client-logo-item {
+    margin: 0 0 30px; } }
