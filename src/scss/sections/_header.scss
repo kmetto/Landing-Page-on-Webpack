@@ -8,12 +8,13 @@
   background-repeat: no-repeat;
   padding: 85px 0 290px;
   .navigation-container {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(19, 19, 22, 0.5);
+    z-index: 9;
     .nav-holder {
       display: flex;
       flex-direction: row;
@@ -75,5 +76,30 @@
   }
   .head-information-more-btn {
     @include buttonGeneral(20px, 62px, $dark-grey-color, $brand-primary-color, $brand-primary-color, $white-color)
+  }
+}
+
+.mob-menu {
+  text-align: center;
+  font-size: 30px;
+  color: $white-color;
+  display: none;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  &.active {
+    & + .menu-holder {
+      display: block;
+    }
+    .mob-menu-close {
+      display: block;
+    }
+    .mob-menu-open {
+      display: none;
+    }
+  }
+  .mob-menu-close {
+    display: none;
   }
 }

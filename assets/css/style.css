@@ -75,12 +75,13 @@ body {
   background-repeat: no-repeat;
   padding: 85px 0 290px; }
   .main-head .navigation-container {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(19, 19, 22, 0.5); }
+    background-color: rgba(19, 19, 22, 0.5);
+    z-index: 9; }
     .main-head .navigation-container .nav-holder {
       display: -webkit-box;
       display: -webkit-flex;
@@ -185,6 +186,24 @@ body {
     .main-head-information .head-information-more-btn:hover {
       color: #ffe600;
       background: #fff; }
+
+.mob-menu {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  display: none;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  cursor: pointer; }
+  .mob-menu.active + .menu-holder {
+    display: block; }
+  .mob-menu.active .mob-menu-close {
+    display: block; }
+  .mob-menu.active .mob-menu-open {
+    display: none; }
+  .mob-menu .mob-menu-close {
+    display: none; }
 
 .services-section {
   background-color: #fff;
@@ -897,6 +916,49 @@ body {
         font-size: 18px; }
         .footer-section .social-list .social-item a:hover {
           color: #ffe600; }
+
+@media screen and (max-width: 768px) {
+  .mob-menu {
+    display: block; }
+  .nav-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative; }
+    .nav-holder .logo-holder .logo {
+      left: 15px; }
+    .nav-holder .menu-holder {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 65px;
+      display: none; }
+      .nav-holder .menu-holder .menu-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        position: relative;
+        background-color: #131a1d;
+        z-index: 9; }
+        .nav-holder .menu-holder .menu-list li {
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          text-transform: uppercase;
+          padding: 0; }
+          .nav-holder .menu-holder .menu-list li:after {
+            display: none; }
+          .nav-holder .menu-holder .menu-list li a {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            margin: 0;
+            display: block; } }
 
 /* COMPONENTS
 ===================================================*/

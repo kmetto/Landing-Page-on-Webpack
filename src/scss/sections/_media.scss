@@ -1,0 +1,46 @@
+@media screen and (max-width: 768px) {
+  //mobile menu
+  .mob-menu {
+    display: block;
+  }
+  .nav-holder {
+    flex-direction: column;
+    position: relative;
+    .logo-holder {
+      .logo {
+        left: 15px;
+      }
+    }
+    .menu-holder {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 65px;
+      display: none;
+      .menu-list {
+        flex-direction: column;
+        position: relative;
+        background-color: $brand-secondary-color;
+        z-index: 9;
+        li {
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          text-transform: uppercase;
+          padding: 0;
+          &:after {
+            display: none;
+          }
+          a {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            margin: 0;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
