@@ -6,11 +6,12 @@ export default {
     navigation: {
         breakPoint: 768,
         selectors: {
-            nav: 'menu-holder',
+            nav: 'navigation-container',
+            menuScroll: 'menu-scroll',
             controls: 'mob-menu',
             openNav: 'mob-menu-open',
             closeNav: 'mob-menu-close',
-            menuLink: 'a',
+            menuLink: 'link-item',
             active: 'active'
         }
     },

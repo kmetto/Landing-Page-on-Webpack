@@ -1,23 +1,266 @@
+@media screen and (max-width: 1440px) {
+  //main-head
+  .main-head {
+    padding-bottom: 50px;
+    .navigation-container {
+      .nav-holder {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+  .main-head-information {
+    padding: 50px 15px;
+    margin: 50px auto 0;
+    .information-title-holder {
+      .information-title {
+        font-size: 32px;
+      }
+    }
+  }
+  //end main-head
+}
+
+@media screen and (max-width: 1199px) {
+  //work-flow-section
+  .work-flow-list {
+    .work-flow-list-item {
+      margin-bottom: 30px;
+      padding: 0;
+      &:last-child {
+       margin-bottom: 0;
+      }
+    }
+    .work-flow-icon-holder {
+      i {
+        font-size: 65px;
+      }
+    }
+  }
+  //end work-flow-section
+  //services-section
+  .services-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .services-list-item {
+      margin-bottom: 30px;
+      width: 100%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .services-icon-holder {
+    width: 150px;
+    height: 150px;
+    font-size: 65px;
+    margin-bottom: 30px;
+  }
+  // end services-section
+  //portfolio-section
+  .achievement-item {
+    margin-bottom: 30px;
+    padding: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .portfolio-media-item {
+    .portfolio-item-mask {
+      .media-title {
+        font-size: 18px;
+      }
+    }
+  }
+  //end portfolio-section
+  //about-section
+  .about-item-container {
+    position: static;
+    padding: 0;
+    .caption,
+    .description {
+      text-align: center;
+    }
+    .about-icon-holder {
+      position: static;
+      margin: 0 auto 30px;
+      width: 150px;
+      height: 150px;
+      font-size: 65px;
+    }
+  }
+  .about-list {
+    .about-item {
+      margin: 0 auto 30px;
+      padding: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  //end about-section
+  //team-section
+  .team-member-list {
+    .team-member-container {
+      margin: 0 auto;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .team-member {
+    margin: 0 auto 30px;
+    padding: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  //end team-section
+  //contact-section
+  .contact-item-holder {
+    margin: 0 auto 30px;
+    padding: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .contact-icon-holder {
+    font-size: 65px;
+  }
+  //end contact-section
+}
+
+@media screen and (max-width: 991px) {
+  //general
+  .services-section,
+  .work-flow-section,
+  .portfolio-achievements,
+  .about-section,
+  .skills-container,
+  .contact-us-container,
+  .contact-form-info {
+    padding: 30px 0;
+  }
+  .work-flow-list,
+  .services-list,
+  .about-list,
+  .client-info-container .client-logo-list {
+    margin-top: 30px;
+  }
+  .portfolio-feedback .description {
+    margin-bottom: 30px;
+  }
+  .portfolio-section,
+  .team-section {
+    padding-top: 30px;
+  }
+  .team-member-info-container,
+  .client-feedback-container {
+    padding: 30px 15px;
+  }
+  .portfolio-feedback,
+  .team-member-list {
+    margin: 30px 0;
+  }
+  .description {
+    max-width: 100%;
+  }
+  .line {
+    margin: 15px auto;
+  }
+  .caption {
+    margin-bottom: 15px;
+  }
+  //end general
+  //team-section
+  .team-member-list {
+    .team-member-container {
+      .angle-up {
+        display: none;
+      }
+    }
+  }
+  //end team-section
+  //portfolio-section
+  .portfolio-media-item {
+    .portfolio-item-mask {
+      .media-title {
+        font-size: 24px;
+      }
+    }
+  }
+  .portfolio-item {
+    padding: 0;
+    height: 300px;
+    margin: 0 auto 30px;
+    .portfolio-picture {
+      max-width: 100%;
+      max-height: 100%;
+      margin: 0 auto;
+    }
+  }
+  .portfolio-information {
+    padding: 0;
+    text-align: center;
+    .description {
+      text-align: center;
+    }
+  }
+  .portfolio-tabs {
+    margin: 20px 0;
+  }
+  //end portfolio-section
+  //contact-us
+  .form-field-control {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+  //end contact-us
+}
+
+@media screen and (max-width: 920px) {
+//client-section
+  .client-info-container {
+    padding: 30px 0;
+  }
+  .client-info-container {
+    .client-logo-list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .client-logo-item {
+    margin: 0 auto 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+//end client-section
+}
+
 @media screen and (max-width: 768px) {
   //mobile menu
+  .main-head {
+    padding: 65px 0 30px;
+  }
   .mob-menu {
     display: block;
   }
   .nav-holder {
     flex-direction: column;
     position: relative;
-    .logo-holder {
-      .logo {
-        left: 15px;
-      }
-    }
     .menu-holder {
       width: 100%;
       position: absolute;
+      display: none;
       left: 0;
       right: 0;
       top: 65px;
-      display: none;
+      box-shadow: 1px 2px 0 #3a3939;
       .menu-list {
         flex-direction: column;
         position: relative;
@@ -43,4 +286,62 @@
       }
     }
   }
+  //end mobile-menu
+}
+
+@media screen and (max-width: 560px) {
+  //main-head
+  .main-head-information {
+    padding: 30px 15px;
+    margin: 30px auto 0;
+    .head-information-more-btn {
+      padding: 15px 50px;
+    }
+    .information-title-holder {
+      margin-bottom: 30px;
+      .information-title {
+        font-size: 18px;
+      }
+    }
+  }
+  //end main-head
+  //contact-section
+  .form-field {
+    padding: 15px;
+  }
+  .form-field-control {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+  .message-field {
+    margin: 15px 0;
+  }
+  .field-control-general {
+    display: none;
+  }
+  .send-msg-btn {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+  //end-contact-section
+  //portfolio-section
+  .portfolio-tabs {
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    li {
+      margin: 0;
+      padding: 10px 0;
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .portfolio-item {
+    height: 190px;
+  }
+  //end portfolio-section
 }

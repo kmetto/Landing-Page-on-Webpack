@@ -24,6 +24,10 @@
       padding: 25px 0 40px;
     }
   }
+  .menu-scroll {
+    background-color: $brand-secondary-color;
+    box-shadow: 1px 2px 0 #3a3939;
+  }
 }
 
 .logo-holder {
@@ -75,7 +79,8 @@
     }
   }
   .head-information-more-btn {
-    @include buttonGeneral(20px, 62px, $dark-grey-color, $brand-primary-color, $brand-primary-color, $white-color)
+    @include buttonGeneral(20px, 62px, $dark-grey-color, $brand-primary-color, $brand-primary-color, $white-color);
+    display: inline-block;
   }
 }
 

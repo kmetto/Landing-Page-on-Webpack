@@ -3,15 +3,10 @@
   background-color: $white-color;
   .client-logo-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     margin-top: 83px;
-    .client-logo-item {
-      margin-right: 55px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
   }
 }
 

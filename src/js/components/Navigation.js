@@ -24,7 +24,16 @@ export default class Navigation {
             }
         });
 
-        $(document).on('click', `${c.navigation.selectors.menuLink}`, function(event){
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 290) {
+                $(`.${c.navigation.selectors.nav}`).addClass(c.navigation.selectors.menuScroll);
+            }
+            else {
+                $(`.${c.navigation.selectors.nav}`).removeClass(c.navigation.selectors.menuScroll);
+            }
+        });
+
+        $(document).on('click', `.${c.navigation.selectors.menuLink}`, function(event){
             event.preventDefault();
 
             $('html, body').animate({
