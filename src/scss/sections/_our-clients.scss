@@ -17,8 +17,11 @@
   background-color: $brand-secondary-color;
   .carousel-client-feedback {
     .item {
-      max-width: 515px;
       margin: 0 auto;
+      blockquote {
+        max-width: 515px;
+        margin: 0 auto;
+      }
     }
   }
 }

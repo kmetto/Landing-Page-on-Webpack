@@ -795,8 +795,8 @@
                     </p>
                 </div>
                 <div class="team-member-list">
-                    <div data-name="mike_doe" class="team-member col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="team-member-container">
+                    <div class="team-member col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="team-member-container" data-relation="team-member-1">
                             <div class="team-member-img-holder">
                                 <img src="./src/images/team1.jpg" alt="creative director">
                             </div>
@@ -809,8 +809,8 @@
                             <span class="angle-up"></span>
                         </div>
                     </div>
-                    <div data-name="nick_doe" class="team-member col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="team-member-container">
+                    <div class="team-member col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="team-member-container" data-relation="team-member-2">
                             <div class="team-member-img-holder">
                                 <img src="./src/images/team2.jpg" alt="creative director">
                             </div>
@@ -823,8 +823,8 @@
                             <span class="angle-up"></span>
                         </div>
                     </div>
-                    <div data-name="anthony_doe" class="team-member col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="team-member-container">
+                    <div class="team-member col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="team-member-container" data-relation="team-member-3">
                             <div class="team-member-img-holder">
                                 <img src="./src/images/team3.jpg" alt="creative director">
                             </div>
@@ -837,8 +837,8 @@
                             <span class="angle-up"></span>
                         </div>
                     </div>
-                    <div data-name="john_doe" class="team-member col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="team-member-container">
+                    <div class="team-member col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="team-member-container" data-relation="team-member-4">
                             <div class="team-member-img-holder">
                                 <img src="./src/images/team4.jpg" alt="creative director">
                             </div>
@@ -853,12 +853,12 @@
                     </div>
                 </div>
             </div>
-            <div id="mike_doe" class="team-member-info-container">
+            <div id="team-member-1" class="team-member-info-container">
                 <div class="team-member-info">
                     <span class="member">
                         Mike Doe
                     </span>
-                    <span class="close-icon-holder">
+                    <span class="close-icon-holder hide-team-member-info">
                         <i class="fa fa-times" aria-hidden="true"></i>
                     </span>
                     <p class="description">
@@ -883,12 +883,12 @@
                     </ul>
                 </div>
             </div>
-            <div id="nick_doe" class="team-member-info-container">
+            <div id="team-member-2" class="team-member-info-container">
                 <div class="team-member-info">
                     <span class="member">
-                        Mike Doe
+                        Nick Doe
                     </span>
-                    <span class="close-icon-holder">
+                    <span class="close-icon-holder hide-team-member-info">
                         <i class="fa fa-times" aria-hidden="true"></i>
                     </span>
                     <p class="description">
@@ -913,12 +913,12 @@
                     </ul>
                 </div>
             </div>
-            <div id="anthony_doe" class="team-member-info-container">
+            <div id="team-member-3" class="team-member-info-container">
                 <div class="team-member-info">
                     <span class="member">
-                        Mike Doe
+                        Anthony Doe
                     </span>
-                    <span class="close-icon-holder">
+                    <span class="close-icon-holder hide-team-member-info">
                         <i class="fa fa-times" aria-hidden="true"></i>
                     </span>
                     <p class="description">
@@ -943,12 +943,12 @@
                     </ul>
                 </div>
             </div>
-            <div id="john_doe" class="team-member-info-container">
+            <div id="team-member-4" class="team-member-info-container">
                 <div class="team-member-info">
                     <span class="member">
-                        Mike Doe
+                        John Doe
                     </span>
-                    <span class="close-icon-holder">
+                    <span class="close-icon-holder hide-team-member-info">
                         <i class="fa fa-times" aria-hidden="true"></i>
                     </span>
                     <p class="description">
@@ -976,13 +976,43 @@
             <div class="skills-container">
                 <div class="wrapper">
                     <div class="description-container">
-                        <span class="title">
-                            The Team
-                        </span>
+                            <span class="title">
+                                Skills
+                            </span>
                         <p class="description">
                             Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
                             Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere.
                         </p>
+                        <div class="skills-charts">
+                            <div class="chart-container">
+                                <div class="chart">
+                                    <div class="skill-chart" data-value="90"></div>
+                                    <div class="chart-value">90</div>
+                                </div>
+                                <div class="skill-name">html&css</div>
+                            </div>
+                            <div class="chart-container">
+                                <div class="chart">
+                                    <div class="skill-chart" data-value="96"></div>
+                                    <div class="chart-value">96</div>
+                                </div>
+                                <div class="skill-name">ai&ps</div>
+                            </div>
+                            <div class="chart-container">
+                                <div class="chart">
+                                    <div class="skill-chart" data-value="85"></div>
+                                    <div class="chart-value">85</div>
+                                </div>
+                                <div class="skill-name">js&php</div>
+                            </div>
+                            <div class="chart-container">
+                                <div class="chart">
+                                    <div class="skill-chart" data-value="94"></div>
+                                    <div class="chart-value">94</div>
+                                </div>
+                                <div class="skill-name">Photography</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1166,7 +1196,7 @@
                     </p>
                 </div>
                 <form action="" id="contact-form" class="contact-user-form  wrapper">
-                    <div class="row">
+                    <div class="row form-row-fields">
                         <div class="form-field-control col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <input
                                 id="name"
@@ -1201,8 +1231,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <textarea id="msg" class="message-field form-field" placeholder="Enter Your message here..."></textarea>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textarea-row">
+                            <textarea id="msg" name="message" class="message-field form-field" placeholder="Enter Your message here..."></textarea>
                         </div>
                     </div>
                     <div class="btn-holder">
@@ -1251,6 +1281,8 @@
         <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <!--set jquery validation-->
         <script src="./node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+        <!--set jquery charts-->
+        <script src="./node_modules/jquery-circlechart/dist/circleChart.es5.min.js"></script>
         <!--main.js-->
         <script src="./assets/js/bundle.js"></script>
     </body>
