@@ -58,7 +58,6 @@ export default {
             }
         },
         errorPlacement(error, element) {
-            console.log('ERROR', error);
             error.insertBefore(element);
         }
     }
