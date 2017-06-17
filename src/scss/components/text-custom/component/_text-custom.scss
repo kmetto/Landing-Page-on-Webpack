@@ -1,23 +1,20 @@
 .title {
-  display: block;
   font-size: 30px;
   font-family: $oswald-bold;
   color: $dark-grey-color;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .caption {
-  display: block;
   margin-bottom: 24px;
   font-size: 16px;
-  font-family: $oswald-regular;
   color: $brand-primary-text-color;
   text-align: center;
   text-transform: uppercase;
 }
 .line {
-  display: block;
   width: 170px;
   height: 3px;
   background: $brand-primary-color;
