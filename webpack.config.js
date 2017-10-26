@@ -1,14 +1,16 @@
 const webpack = require("webpack");
 const path = require("path");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: {
+        "index.html": "./src/pug/index.pug",
         "css/style.css": "./src/scss/style.scss",
         "js/bundle.js": "./src/js/main.js"
     },
     output: {
-        path: path.join(__dirname, "assets"),
+        path: path.join(__dirname, "build"),
         filename: "[name]"
     },
     watch: true,
@@ -37,7 +39,7 @@ module.exports = {
                 use: {
                     loader: "babel-loader",
                     query: {
-                        presets: ["es2015"],
+                        presets: ["env"],
                         plugins: ["transform-runtime"]
                     }
                 }
@@ -50,10 +52,18 @@ module.exports = {
                         limit: 1000000
                     }
                 }
-            }
+            },
+            {
+                  test: /\.pug$/,
+                  use: ExtractTextPlugin.extract({use:[
+                    'html-loader',
+                    'pug-html-loader',
+                  ]}),
+            },
         ]
     },
     plugins: [
-        new ExtractTextPlugin("[name]")
+      new CleanWebpackPlugin(['build']),
+      new ExtractTextPlugin("[name]"),
     ]
 };
